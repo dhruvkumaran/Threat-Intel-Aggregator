@@ -1,0 +1,334 @@
+2025-06-19 23:09:20,847 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-06-19 23:09:20,847 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-19 23:09:20,848 - INFO -  * Restarting with stat
+2025-06-19 23:09:21,249 - WARNING -  * Debugger is active!
+2025-06-19 23:09:21,251 - INFO -  * Debugger PIN: 958-381-803
+2025-06-19 23:09:27,802 - INFO - 127.0.0.1 - - [19/Jun/2025 23:09:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-19 23:09:27,868 - INFO - 127.0.0.1 - - [19/Jun/2025 23:09:27] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-19 23:09:28,047 - INFO - 127.0.0.1 - - [19/Jun/2025 23:09:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-19 23:09:28,117 - INFO - 127.0.0.1 - - [19/Jun/2025 23:09:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=I2wGOefQStmiaIUxZXmj HTTP/1.1" 200 -
+2025-06-19 23:09:28,387 - INFO - 127.0.0.1 - - [19/Jun/2025 23:09:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-19 23:25:59,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-06-19 23:25:59,994 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-19 23:25:59,996 - INFO -  * Restarting with stat
+2025-06-19 23:26:00,399 - WARNING -  * Debugger is active!
+2025-06-19 23:26:00,401 - INFO -  * Debugger PIN: 958-381-803
+2025-06-19 23:26:02,549 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:02] "GET / HTTP/1.1" 200 -
+2025-06-19 23:26:02,557 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:02] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:26:03,003 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-19 23:26:13,615 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:13] "GET /?indicator=%09103.28.34.179&type=ip HTTP/1.1" 200 -
+2025-06-19 23:26:13,622 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:26:21,397 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:21] "GET /?indicator=%09103.28.34.179&type=ip HTTP/1.1" 200 -
+2025-06-19 23:26:21,706 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:26:48,028 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:48] "GET / HTTP/1.1" 200 -
+2025-06-19 23:26:48,060 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:26:48,270 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-19 23:26:58,762 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:58] "GET /?indicator=%09103.28.34.179&type=ip HTTP/1.1" 200 -
+2025-06-19 23:26:59,067 - INFO - 127.0.0.1 - - [19/Jun/2025 23:26:59] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:39:25,920 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-06-19 23:39:25,920 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-19 23:39:25,921 - INFO -  * Restarting with stat
+2025-06-19 23:39:26,314 - WARNING -  * Debugger is active!
+2025-06-19 23:39:26,315 - INFO -  * Debugger PIN: 958-381-803
+2025-06-19 23:39:29,444 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:29] "GET / HTTP/1.1" 200 -
+2025-06-19 23:39:29,467 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:29] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:39:30,098 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-19 23:39:35,186 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-19 23:39:36,299 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-19 23:39:39,859 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-19 23:39:40,332 - WARNING - ALERT: High-severity IOC detected: 103.28.34.179 (ip)
+VirusTotal Malicious: 0
+AbuseIPDB Score: 100
+2025-06-19 23:39:40,334 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:40] "POST / HTTP/1.1" 200 -
+2025-06-19 23:39:40,336 - INFO - Duplicate IOC skipped: 103.28.34.179 (ip)
+2025-06-19 23:39:40,337 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:40] "POST / HTTP/1.1" 200 -
+2025-06-19 23:39:40,683 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-19 23:39:40,857 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-19 23:39:44,200 - INFO - Duplicate IOC skipped: 103.28.34.179 (ip)
+2025-06-19 23:39:44,201 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:44] "POST / HTTP/1.1" 200 -
+2025-06-19 23:39:45,230 - INFO - Duplicate IOC skipped: 103.28.34.179 (ip)
+2025-06-19 23:39:45,230 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:45] "POST / HTTP/1.1" 200 -
+2025-06-19 23:39:45,235 - INFO - Duplicate IOC skipped: 103.28.34.179 (ip)
+2025-06-19 23:39:45,236 - INFO - 127.0.0.1 - - [19/Jun/2025 23:39:45] "POST / HTTP/1.1" 200 -
+2025-06-19 23:52:40,052 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-06-19 23:52:40,052 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-19 23:52:40,053 - INFO -  * Restarting with stat
+2025-06-19 23:52:40,463 - WARNING -  * Debugger is active!
+2025-06-19 23:52:40,465 - INFO -  * Debugger PIN: 137-482-083
+2025-06-19 23:52:42,191 - INFO - 127.0.0.1 - - [19/Jun/2025 23:52:42] "GET / HTTP/1.1" 200 -
+2025-06-19 23:52:42,198 - INFO - 127.0.0.1 - - [19/Jun/2025 23:52:42] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-19 23:52:42,420 - INFO - 127.0.0.1 - - [19/Jun/2025 23:52:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-19 23:52:57,675 - INFO - Query: 1.1.1.1, Type: ip
+2025-06-19 23:53:02,744 - INFO - 127.0.0.1 - - [19/Jun/2025 23:53:02] "POST / HTTP/1.1" 200 -
+2025-06-19 23:56:25,387 - INFO - Query: google.com, Type: domain
+2025-06-19 23:56:26,325 - INFO - URLhaus domain matches for google.com: [{'url': 'https://script.google.com/macros/s/AKfycbyZAK2Gp2FZYyUtaKt1CeoAPwWPFdcBzvq72UAFMRrKq8oz04Xw9FviH3QFlE8dvdAN/exec', 'netloc': 'script.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1m1n2tLXCpoSapMnYmmTPQoLWFESeNSKx', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=13silqGfBhhmcosGIjnMtDywSHM_qe7mY&export=download', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1DiG53YmASxPC2RNQjFmdfk4dtS_Q46pg', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=1OfmwqGG7_yKr3-m2VebSJLf3v5Udx9p4&export=download&authuser=0&confirm=t&uuid=59453399-d8cb-4e02-93ef-557d6f78bf04&at=ALoNOgnsAGYFe8dVBv1Ms-OahUJ4A1747528894744', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://drive.google.com/drive/folders/1Cezlex_micbsD1T6KIJSjvyrSH2VMSS2', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=1YBVIDkZgygNfUU2rbJXXCYdrzay5rMdY&export=download&authuser=0&confirm=t', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://script.google.com/macros/s/AKfycbx3WeHtG1jwshbhdLCCrXT8LJwchftj_QD8Ne1jPihk2qmIhSlYhRBkf55gTive3PjCQg/exec', 'netloc': 'script.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1vNCfqLXOMpeSBbndyp_u9Myf3H1PW4_x', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ed2w0zvvx53_mFifdSZYSLLeuRuB40zO', 'netloc': 'drive.google.com'}, {'url': 'https://script.google.com/macros/s/AKfycbz8BS-UlbTW6hootQw1-dlx_85q9Fqx6U8XY_5_fagr8xhN0Ahvm2QCX2JPsoAOZdDG/exec', 'netloc': 'script.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1wvXIyF_RyVGg_x3x7uCeIcqrNdHB7lUl', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=1doQjp0FAI3MAN4kUyX9NVLuk3tmvB99A&export=download&authuser=0', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1dAo5odhqziZsg9dsl5BmLeS6O8hmhzXu', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=1uBDfdbUFKu2yC6s-MFwZ8aySnTYjrdmx', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1cCJlBdDGJHpEEff1B1HfKGP3X16C_tJ1', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1bPc5Z-hv6Kosk6ArtkFMbtsNNWWPdGHY', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1XbkMrQ083XWyjt7JNPPP--zTRKPA9cgJ', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ltRdqLgcL6SMoQuJFS1pb2erNzHsBydH', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1MLEnjC-u_DchsG29YpNh0R3Ve6ORwsGy', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1EpBBOKHsnqesswngiJmcqrn3uQfXPlKi', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1hRP9LnASbpLclnhPpP1ABwB1UwV4kDvs', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1drYJjwMm-iXdwPf_dl6qZkSgLKRNxZhC', 'netloc': 'drive.google.com'}, {'url': 'https://sites.google.com/view/robloxfree2025/roblox-free-hack', 'netloc': 'sites.google.com'}, {'url': 'https://drive.google.com/file/d/11SRBeq-5b2C7gf5Z24SzNiSxCTSHONLJ/view', 'netloc': 'drive.google.com'}, {'url': 'https://sites.google.com/view/drcheats6', 'netloc': 'sites.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=17PVWfpFNzHwiJ_IEVZXYq8Mf3PAadt1D', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1KcBHXhjT-BDxSZgXt1NfNZDt5hpvKWK4', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1MUFtth-5lsCDi3OvD5VN7sjkeiT2h9k1', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1XuS_OzWk75_RaTQje2g4_e-3PDBTebvu', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ngT5LfPdYCjzNv9E5pMg0yPFgdVk-hu3', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=18uUAolTTK7dlnUlPklbQRiOHBVvOwXnI', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ksMwvDtgNn0cA-d-OY9ZHPGBFMPJSOeP', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1hnvBwW1A_DoMw2UQHCtrpXiIaMZodx7a', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1nlFXl0PbdcrlwdGM86HkVPNTT3wqUv9P', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1BsCCupgm5pkPHZ5PxL813Ns6mExRi2lj', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1Y4WwPkXLFJqlFUl9jMRvBNznr2ARGynO', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1GDatLMNWhKsQzov-7XDcjgSQSXD9aYBs', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1hrJyUcGHE7phSnVQq-YBztapqZpc48A5', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=18_1273d_QXcw7chwpjFwcrGttaMg6r_3', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1FiF9_yyukTwT-EpDcLAxpKoVGx4H8Q-y', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1SRcol432sQAeOBiCTAPZVECcTFbJ-SV_', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1GRBEM3bZtZCShgFfvgXG3hEPCbgeu3MQ', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1zhUu6SmoLCg1DflaUQaP_RVg_D_F011U', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=19Sp4e2ZWe1JSdj1Wz2YN0Buuw_OuN7mD', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=17vcsbc2QpLP5ePO_JvJZt-c_FBFfLjgW', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1zdJPYnzZV3zTI9OmR0YidbsPsWIbcgM3', 'netloc': 'drive.google.com'}, {'url': 'https://drive.usercontent.google.com/download?id=1RUNwgzWukCzreSnSImOX9Y-YlHejycAi', 'netloc': 'drive.usercontent.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1JUHcNmrgbb8I6HyXUcNQ_4It4SQ60rtQ', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=18tpMXWMaHqKIsoy08Gq3a7rKUblJL8-y', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ESNHSm4ZZh-9_nbldsLkyhX3l_m3viKf', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1dbFlp4N3At5mAJWqSUIar9v5CFq8UhOk', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1skqYlAUSO-QyFwV8cpo2EZtN_G9hsQPP', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1lJEuR3nYYghkNO8rpR3djlLI3fPp6rPq', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1KZBXe0sXH2nEkDwfbbrVYZg6vSu-Nmci', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1EK4th7UCqD9_h2yf9orHzhUALLukeO0n', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1q6IjI-1UQ5KSrr3luuFy3To-jFS4EC4d', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1T_h_eu-5MeUPkKFv3HOdgOedMaVqMpit', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1fhxdzqg5lKZlLR_-C0tGRhpjvIhp25JI', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1inbpqTz2QyuS0ZQLDNbHUTbZwgDGhHS0', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1g4Q6iaY5QjZLGiGjqNwFTkdc5-o_2PQx', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1hau14yEj_4AvFJUHYm_bmE4iCvx1NQGQ', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1cl-nvHrRue_Wg2ZKPuxmVK40tk3knacb', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1wUuhGyP5h960nq0lYtu0zAXIALB78BYb', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=10yN0gknsK0Hopi5eYv9VXKxXVMwI9k4U', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1E2JDrdS0CIMRW3YPjRguvFl-CfsU0vKV', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=12jgDe-soIB4LIipbDhS55vKZ7EK8_Ua6', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1_-w5Me4EvTzbdzIX_v_YMZdeLAzHrV5z', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1UnU9ydYXvBsgDAS_xzEWlzcaiV6O_QdT', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1B3MRGXuZWdG46eXHp6A71YeYmlVrmaBx', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1NvSn7w4EPO6U8rU3BheuM2FyGVBG6fh4', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1-WQl_IuA-mYLU2KIuYz-IB-5GgJqjQQP', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1iDr9P3dgXKBLHU7H4JcKCLZMTLIbWSIW', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1c2pnUcvMA1SHU90MNAUhEf6SHiLDTH-s', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1JBZzNtbk1KUszoofWw7HsQfDh066oNtf', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1HkvynlDKcbdd50_BSW3S9Tk5elBDuXtG', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=17hv9-3t2iLIKBmcFqL2Z66IPd72x4mZ7', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1KC4FDseOhzqYMZ2X0NCqsWPh66uxDB1z', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1U_rahQbKS7vD7Qqc6WX3gXnjxTfqRZbp', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1-8QpzGR4-iiS53p1-KR2-O6pRRJmNkSK', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1UBqRhZiuSgL-cN_NIe2_UdJ4QI6qrQsw', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1iKoXnnlVGlH6jhnfqKRSihsS_P2dQkYp', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1gmZQSeMYmFfKA4lve0JKwa06SKlk7XhU', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1yGqwpVXaDhjSXskR3U3tDW2u5DnZv0Pp', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1uZjwtBH4Hcs9i060hWf08HrNymnOdugN', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1Wuy2Y3vBxibDFQCs6-kx96NOcarZixfD', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1IFVZUB1BlHMwSIRShBE2Wu5b1TUs3LS-', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1YyDIodTW09bAnoU13RO8IELf9rCMljXy', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=11cByKY_wEGQJut6afR8jAnNW7VUB-xXf', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1RFSMRZEANvap2TNmTWRpTLEpWArWLkGE', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1sJM5T0KtLePibtV3kgaOUsSPnW3zOnOm', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1oXPqeUTyREBy186eXX4ZeOfyZ0RjOcSP', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1e2Y5YPPU_zJJ4o3wmuo-2J8N9LBthKzC', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1_LDGUOPT2cG7fblNTw3lTXGTxQTMLFlc', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=10lygPYJu_Dlg3x6R9OSlzGBlsHakSTl-', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1sqvM1XSORanfNVqst_KkDmN8yHgulm4k', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1GFn3lqD1rVybuT4ha-ldl92wT8ysRZfc', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1sAtMEXZN3QpVqzfxNc-5Dtnnn8lIHDXH', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1GVnZexVVs3VPv0-ihFlWnmzMHIJ3qqlY', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=12Ma_YvBmprTs6E_VkFNMWIkRNWSARQbW', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1O9jG3OQYEWNcoPTigwsCdbTfMvtfQyGJ', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1N8_s6gIjereArczwh74BlKYgOdIg64eO', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1YfqTuGAHQHQrUlWUGDEkEAvfFktSL8cI', 'netloc': 'drive.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1SbD1rnw8lUztJMSH6GDlZUPVyUPBopa0&revid=0B3yyJTs_WOKLR2VnYXVQOHlidXBXN1l2WWJnTXFnWVI5V0h3PQ', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1CtmYWLj5woUiug1WgIZy3kE7YJ1u0YoR&revid=0B_t0-zked1mGaGxwMXcwYWQ5Q0Q1Uk1UOXcwaUp6L2ovMTdjPQ', 'netloc': 'docs.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1alQ8r5TnR6wWIfTqA3l6D9FYMv7y0G9m', 'netloc': 'drive.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1tiLqoZOt07VyLvDmmSfS7iA452jWhKTj&revid=0B7gsMQZks4XkcDJCWHUvaTJ2QVlvcHNmNnovU2lDZStEK2JZPQ', 'netloc': 'docs.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1ETPmpb2shvUny5DxJ5awfpxklxqpBzGx', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1b6t1MjNJCvnDcY-MDQQ0NeqRBOcqYJu4', 'netloc': 'drive.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1NW1GmZG6LwTuhs0TTE969xcFpP9_dc5q', 'netloc': 'drive.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQOfSpqgO4lHe7xT4KY-GkJBc9RGwzgW9RksC_Azpw2gOtdlNHX9OxC_RgK1zz9MgxXwqOIxeY0EAJp/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vSzvHW0LyWvIZ_DpqozKDIP0ORJsF7411uCIRWQEGCGFxWqQb3Nqpbn3d7ORQqxnAtypULrA_ssGgIE/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vR-AsdhFA85LNHp1g6rll18x2htnFLVy5ZgGXzRFVEeCVBHjiWAes9O9w3DN49Od7lplIxL3u59ICjr/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQB__8QdirAoo-S_qRzkk8O_8brSUWAEje3IVcD5EFHDdlUX4gW5OtILJ5ezFenwJZAHA-ZOjj_7SRj/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQha4KUtkvbpn1C9R1JOlUB-v1DYH36Itza-2zhojXUluSkOxk6IOGpy8B8IsCqQJsKAF3WDuC6oykt/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQm_l1O1djKtV6pCFWIXDz1gjaqrG26rPb3N3uqPk0JqVIF91b_IRdew7mo34HHhOfFBjOhoztLmdTP/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vRXKt9v4QcOm-0wjCeB6BExUfGpr_VdEBKC-kRa8H7GuTBbLSEt1veGUUmqXS3npiV4qw-7_1KIy3jM/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vSpNRQtfaFTWPvbd8o61fbvozlHC3Z0x8jY4Glnji-v80XRXNleMGT89l5iMNr_7KxsT0gn9YDKJj0Q/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vSfTpbJz498IcT3AB9-TEhopymAcL8yGytKgufXpNWLfpHfXYYH5jmFj_2LLRRdDSiU8VYPU1KsVP5P/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vSHL18R1cK_D3qquy_96CldxN3bn2En2DRfTj2JAU29p-UNkVG5b093kL8xCkTHPD2JfIaPlgzBIqnu/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vS1h7tXEwarzQVE-jWXnwCgZIBOfoz58QRk8KErhmFZ8mPipPGfjEoijThgmm-TW7LwcIpr8ACUp_Ft/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vR92cz6Z4UH71OgQyZGn6VTdC54xoA0IoVIzMkmogvEKYiX648nySfIPvt4QtO6uvtRP9JSaTOeuHK3/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vTUc-a7s7YLxnfwqP8oxz6NO5uwdMabudX-6glKWRnzjWQWgDtcPDVwP0X0l03QDarzrzOnJ_ADevlW/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQE1Vc-NlFENfGIgyaUGMMG1DQ4L0-HaIKP9qxkaCc32ig0XTg6go8LEjDOOGO0vfeOIE4tcyY4_Bn4/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vSRVKllojuhzbQOKetTk0u2b1WHglldp35-O1ZGt_jleM2Z2odweDJ0z9sgTukvIKDoWCUan-0fJ5WN/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQVbPr6y2JjnKxfpCwt9uV7pQYcg6vDOoWr-XNAkhTl9Ns4TK44RPA91EM8UsOc992UqyrPN6ucY5eP/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQ8KQM4rsObVbPgA8nCNZs-1xuLWUeZFRI9x1ktOWPiiJcTqE1uQ0IGED6iQ7sA5ZuhNh56eGsEbkOJ/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vTEcBRofm9hcrdMzZ8G7KtNeypnRPR1s7BvYoIT3r8jD7rjaNMYSK9yyuhvzmDp3DmKD-xsS7kpYfFa/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vT544W_wVxHvFSKbX2Zio7PHt-jZHB1nVr7Y1QhTxCcjOpCfXzHM1moTTjhJsduDpGS9LfrjCqzOi8N/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vTcfDv_0SrlqbMtFzi6HIVmiKKNsFqd5bubueM-s-MzPZFsva62ZYnCOy-PHkZysUhuDDL0YHlYAjYE/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vRtnhy8iPm82eGefG7zhukJ5qwBit31-jlHdsxOVfF8rCeFW2UHPNdpuClv_ffRQQDJHXYXYmpJ3ame/pub', 'netloc': 'docs.google.com'}, {'url': 'http://docs.google.com/document/d/e/2PACX-1vT4iy9nlwUov8HsMPYkbfKn1FH1yDP7mS8Dudg2ldfjGxF8rumDtZGiW7ukoIFo3aP-pB7ybzlCdFqi/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vTyg409rJv4Omi3OuJyjsc6AjZfllUuz37ofzBpJJiHmrewoH2EHp2PwbflLGYy_YZQDRLdwcaeJVD5/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vR1e4KzYqnEOh2tJC5Rh_unLfWJdo31GedrvEg0wDYrPRmm3YFDxJQXDVyy535adzU5P9m4mrVDAU9v/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vRVMUtAxfc2EwKVy_L_CeWFjWv4Md_UADQlV4onmlyC0fRnP7jOD3ru93SM6Y-tMoJ0NrvBFYLT739Z/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vTPhoLmraa4dir0Lg8Z5YHQlJWbZp0qkYpC3jax6d3L0Hs6n23KPm2IQgCCjvBvug5Th443jjBzs2uv/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQ6nR-yG49VLDzzxLiqVpUPbAjoSs2NfXsnsK3KhaixmvqYDl20mXHTtP-qa7MojkWa4Osepa76nNbl/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/document/d/e/2PACX-1vQYoWYOXAtA2couQA6uc3GWi59Sq5MAUAlR7yfMq6LuzVtEfQoPOGnCbLI8hX6vUBkt2b65QerqHZy8/pub', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1M8jsZvQ-zTFruL7VgSB6q-n3fTGnkbdJ&revid=0BxrhyBF9__wNMGJlNmxMUnZzNlU0V204azc4eDMzcEp6a0hZPQ', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1GV_Nk9lLqw4fxUdO-khJA7NUUJ1KEvvw&revid=0B7ZeFP-G6n7vM0ZhOWo4bE9pVUs4Mmh0YmxVd3R6ZlU3YlZnPQ', 'netloc': 'docs.google.com'}, {'url': 'https://drive.google.com/uc?id=1a7jWDzayVXW_d3CgV_N7TjF4STY3UFOr&export=download', 'netloc': 'drive.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1H_DyP_d5Lst4Akyf2QEzXL7J1SCVbtVs&revid=0B5thCKui5i0mdk5mOElBNm9vUHNYdVJnVWpYQ01VRG5XVWhrPQ', 'netloc': 'docs.google.com'}, {'url': 'https://drive.google.com/uc?export=download&id=1uYGnPwZZyzn2rODSRImg0-SlOxy_leTG', 'netloc': 'drive.google.com'}, {'url': 'https://sites.google.com/view/59bmj3vj18vh2/drive/storage/a/files/download?ID=625899581658508733', 'netloc': 'sites.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1YGn4gkmy9mUSDp_LgNPyJjh6RSKT39vP&revid=0B8rbGP2BpEOfMk5Ta3N3MGJTeFBZdEVwTk5WWHpjd3YrUEJJPQ', 'netloc': 'docs.google.com'}, {'url': 'https://docs.google.com/uc?export=download&id=1JPL-UoUydm5HypQM67uokyDdrbLbpxvW&revid=0B7zpIPRmOC5UbHpWclQ0cXdyTE5vWTRBYmNidzNHTGM3bzVrPQ', 'netloc': 'docs.google.com'}]
+2025-06-19 23:56:30,576 - INFO - 127.0.0.1 - - [19/Jun/2025 23:56:30] "POST / HTTP/1.1" 200 -
+2025-06-19 23:58:58,825 - INFO - Query: 	http://31.56.39.249/m68k, Type: domain
+2025-06-19 23:58:59,931 - INFO - URLhaus no matches for http://31.56.39.249/m68k. Checked 86002 URLs.
+2025-06-19 23:59:02,285 - INFO - 127.0.0.1 - - [19/Jun/2025 23:59:02] "POST / HTTP/1.1" 200 -
+2025-06-20 00:02:06,154 - INFO - Query:  117.193.239.184, Type: ip
+2025-06-20 00:02:11,023 - INFO - 127.0.0.1 - - [20/Jun/2025 00:02:11] "POST / HTTP/1.1" 200 -
+2025-06-20 00:30:40,618 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:31:03,806 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:33:56,449 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:37:09,507 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:40:47,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-06-20 00:40:47,218 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 00:40:47,219 - INFO -  * Restarting with stat
+2025-06-20 00:40:47,644 - WARNING -  * Debugger is active!
+2025-06-20 00:40:47,646 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 00:40:53,770 - INFO - 127.0.0.1 - - [20/Jun/2025 00:40:53] "GET / HTTP/1.1" 200 -
+2025-06-20 00:40:53,778 - INFO - 127.0.0.1 - - [20/Jun/2025 00:40:53] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 00:40:58,053 - INFO - Query: 	103.28.34.179, Type: ip
+2025-06-20 00:41:02,975 - INFO - Duplicate IOC skipped: 103.28.34.179 (ip)
+2025-06-20 00:41:02,975 - INFO - 127.0.0.1 - - [20/Jun/2025 00:41:02] "POST / HTTP/1.1" 200 -
+2025-06-20 00:48:04,787 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:48:18,723 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:50:09,419 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:50:09,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 00:50:09,440 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 00:50:09,441 - INFO -  * Restarting with stat
+2025-06-20 00:50:10,130 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:50:10,143 - WARNING -  * Debugger is active!
+2025-06-20 00:50:10,145 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 00:50:13,226 - INFO - 127.0.0.1 - - [20/Jun/2025 00:50:13] "GET / HTTP/1.1" 200 -
+2025-06-20 00:50:13,235 - INFO - 127.0.0.1 - - [20/Jun/2025 00:50:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 00:50:20,096 - INFO - 127.0.0.1 - - [20/Jun/2025 00:50:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-20 00:50:32,138 - ERROR - Error calling Gemini API for 103.28.34.179: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-20 00:50:32,138 - WARNING - Gemini analysis failed or returned error for 103.28.34.179: Failed to get response from Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.. Falling back to rule-based analysis.
+2025-06-20 00:50:32,146 - WARNING - ALERT: Query for 103.28.34.179 (ip) processed.
+2025-06-20 00:50:32,149 - INFO - 127.0.0.1 - - [20/Jun/2025 00:50:32] "POST / HTTP/1.1" 200 -
+2025-06-20 00:52:50,570 - INFO -  * Detected change in 'D:\\threat_intel_aggregator\\gemini_client.py', reloading
+2025-06-20 00:52:52,685 - INFO -  * Restarting with stat
+2025-06-20 00:52:53,445 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:52:53,460 - WARNING -  * Debugger is active!
+2025-06-20 00:52:53,462 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 00:53:30,029 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:53:30,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 00:53:30,050 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 00:53:30,050 - INFO -  * Restarting with stat
+2025-06-20 00:53:30,751 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:53:30,765 - WARNING -  * Debugger is active!
+2025-06-20 00:53:30,767 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 00:53:32,968 - INFO - 127.0.0.1 - - [20/Jun/2025 00:53:32] "GET / HTTP/1.1" 200 -
+2025-06-20 00:53:32,979 - INFO - 127.0.0.1 - - [20/Jun/2025 00:53:32] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 00:53:44,006 - ERROR - Error during Gemini API call for 103.28.34.179: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-20 00:53:44,006 - WARNING - Gemini analysis failed or returned error for 103.28.34.179: Failed to get response from Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.. Falling back to rule-based analysis.
+2025-06-20 00:53:44,015 - WARNING - ALERT: Query for 103.28.34.179 (ip) processed.
+2025-06-20 00:53:44,017 - INFO - 127.0.0.1 - - [20/Jun/2025 00:53:44] "POST / HTTP/1.1" 200 -
+2025-06-20 00:57:20,325 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:57:20,332 - INFO - Added 'gemini_analysis_result' column to queries table.
+2025-06-20 00:57:20,332 - INFO - Database initialized successfully.
+2025-06-20 00:57:20,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 00:57:20,358 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 00:57:20,359 - INFO -  * Restarting with stat
+2025-06-20 00:57:21,066 - INFO - Gemini API client initialized successfully.
+2025-06-20 00:57:21,069 - INFO - Database initialized successfully.
+2025-06-20 00:57:21,081 - WARNING -  * Debugger is active!
+2025-06-20 00:57:21,083 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 00:57:22,725 - ERROR - Error decoding JSON from database for query ID 7: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 6: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 5: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 4: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 3: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 2: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,726 - ERROR - Error decoding JSON from database for query ID 1: Extra data: line 1 column 5 (char 4)
+2025-06-20 00:57:22,774 - INFO - 127.0.0.1 - - [20/Jun/2025 00:57:22] "GET / HTTP/1.1" 200 -
+2025-06-20 00:57:22,782 - INFO - 127.0.0.1 - - [20/Jun/2025 00:57:22] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 00:57:34,196 - INFO - 127.0.0.1 - - [20/Jun/2025 00:57:34] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2025-06-20 01:00:47,445 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:00:47,447 - INFO - Database initialized successfully.
+2025-06-20 01:00:47,466 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:00:47,467 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:00:47,467 - INFO -  * Restarting with stat
+2025-06-20 01:00:48,194 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:00:48,196 - INFO - Database initialized successfully.
+2025-06-20 01:00:48,208 - WARNING -  * Debugger is active!
+2025-06-20 01:00:48,210 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:00:49,443 - ERROR - Error decoding JSON from database for query ID 7: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,443 - ERROR - Error decoding JSON from database for query ID 6: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,443 - ERROR - Error decoding JSON from database for query ID 5: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,444 - ERROR - Error decoding JSON from database for query ID 4: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,444 - ERROR - Error decoding JSON from database for query ID 3: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,444 - ERROR - Error decoding JSON from database for query ID 2: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,444 - ERROR - Error decoding JSON from database for query ID 1: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:00:49,459 - INFO - 127.0.0.1 - - [20/Jun/2025 01:00:49] "GET / HTTP/1.1" 200 -
+2025-06-20 01:00:49,475 - INFO - 127.0.0.1 - - [20/Jun/2025 01:00:49] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:01:01,148 - ERROR - Error querying CrowdSec for IP 103.28.34.179: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=103.28.34.179
+2025-06-20 01:01:04,388 - ERROR - Error during Gemini API call for 103.28.34.179: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-20 01:01:04,389 - WARNING - Gemini analysis failed or returned error for 103.28.34.179: Failed to get response from Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.. Falling back to rule-based analysis.
+2025-06-20 01:01:04,393 - INFO - Query for 103.28.34.179 added to database.
+2025-06-20 01:01:04,393 - INFO - 127.0.0.1 - - [20/Jun/2025 01:01:04] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:01:04,420 - ERROR - Error decoding JSON from database for query ID 8: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,420 - ERROR - Error decoding JSON from database for query ID 7: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,420 - ERROR - Error decoding JSON from database for query ID 6: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,420 - ERROR - Error decoding JSON from database for query ID 5: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,420 - ERROR - Error decoding JSON from database for query ID 4: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,421 - ERROR - Error decoding JSON from database for query ID 3: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,421 - ERROR - Error decoding JSON from database for query ID 2: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,421 - ERROR - Error decoding JSON from database for query ID 1: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:01:04,422 - INFO - 127.0.0.1 - - [20/Jun/2025 01:01:04] "GET / HTTP/1.1" 200 -
+2025-06-20 01:01:04,429 - INFO - 127.0.0.1 - - [20/Jun/2025 01:01:04] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:06:24,070 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:06:24,072 - INFO - Database initialized successfully.
+2025-06-20 01:06:24,099 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:06:24,099 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:06:24,100 - INFO -  * Restarting with stat
+2025-06-20 01:06:24,812 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:06:24,814 - INFO - Database initialized successfully.
+2025-06-20 01:06:24,827 - WARNING -  * Debugger is active!
+2025-06-20 01:06:24,829 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:06:25,864 - ERROR - Error decoding JSON from database for query ID 8: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,864 - ERROR - Error decoding JSON from database for query ID 7: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,864 - ERROR - Error decoding JSON from database for query ID 6: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,864 - ERROR - Error decoding JSON from database for query ID 5: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,865 - ERROR - Error decoding JSON from database for query ID 4: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,865 - ERROR - Error decoding JSON from database for query ID 3: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,865 - ERROR - Error decoding JSON from database for query ID 2: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,865 - ERROR - Error decoding JSON from database for query ID 1: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:25,911 - INFO - 127.0.0.1 - - [20/Jun/2025 01:06:25] "GET / HTTP/1.1" 200 -
+2025-06-20 01:06:25,918 - INFO - 127.0.0.1 - - [20/Jun/2025 01:06:25] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:06:38,589 - ERROR - Error querying CrowdSec for IP 103.28.34.179: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=103.28.34.179
+2025-06-20 01:06:41,780 - ERROR - Error during Gemini API call for 103.28.34.179: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-20 01:06:41,781 - WARNING - Gemini analysis failed or returned error for 103.28.34.179: Failed to get response from Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.. Falling back to rule-based analysis.
+2025-06-20 01:06:41,789 - INFO - Query for 103.28.34.179 added to database.
+2025-06-20 01:06:41,790 - INFO - 127.0.0.1 - - [20/Jun/2025 01:06:41] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:06:41,803 - ERROR - Error decoding JSON from database for query ID 9: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,804 - ERROR - Error decoding JSON from database for query ID 8: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,804 - ERROR - Error decoding JSON from database for query ID 7: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,804 - ERROR - Error decoding JSON from database for query ID 6: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,804 - ERROR - Error decoding JSON from database for query ID 5: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,805 - ERROR - Error decoding JSON from database for query ID 4: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,805 - ERROR - Error decoding JSON from database for query ID 3: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,805 - ERROR - Error decoding JSON from database for query ID 2: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,805 - ERROR - Error decoding JSON from database for query ID 1: Extra data: line 1 column 5 (char 4)
+2025-06-20 01:06:41,806 - INFO - 127.0.0.1 - - [20/Jun/2025 01:06:41] "GET / HTTP/1.1" 200 -
+2025-06-20 01:06:41,815 - INFO - 127.0.0.1 - - [20/Jun/2025 01:06:41] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:19:34,432 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:19:34,434 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:19:34,435 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:19:34,457 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:19:34,457 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:19:34,459 - INFO -  * Restarting with stat
+2025-06-20 01:19:35,169 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:19:35,171 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:19:35,172 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:19:35,184 - WARNING -  * Debugger is active!
+2025-06-20 01:19:35,185 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:19:36,841 - INFO - 127.0.0.1 - - [20/Jun/2025 01:19:36] "GET / HTTP/1.1" 200 -
+2025-06-20 01:19:36,851 - INFO - 127.0.0.1 - - [20/Jun/2025 01:19:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:20:27,484 - INFO - Querying IOC: ('117.193.239.184', 'IP') (IP)
+2025-06-20 01:20:28,174 - INFO - 127.0.0.1 - - [20/Jun/2025 01:20:28] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2025-06-20 01:20:45,464 - INFO - Querying IOC: ('103.28.34.179', 'IP') (IP)
+2025-06-20 01:20:46,078 - INFO - 127.0.0.1 - - [20/Jun/2025 01:20:46] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2025-06-20 01:23:06,701 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:23:06,703 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:23:06,704 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:23:06,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:23:06,724 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:23:06,724 - INFO -  * Restarting with stat
+2025-06-20 01:23:07,424 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:23:07,426 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:23:07,427 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:23:07,439 - WARNING -  * Debugger is active!
+2025-06-20 01:23:07,441 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:23:08,640 - INFO - 127.0.0.1 - - [20/Jun/2025 01:23:08] "GET / HTTP/1.1" 200 -
+2025-06-20 01:23:08,650 - INFO - 127.0.0.1 - - [20/Jun/2025 01:23:08] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:23:17,051 - INFO - Querying IOC: ('103.28.34.179', 'IP') (IP)
+2025-06-20 01:23:17,899 - INFO - 127.0.0.1 - - [20/Jun/2025 01:23:17] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2025-06-20 01:25:47,410 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:25:47,412 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:25:47,413 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:25:47,436 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:25:47,436 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:25:47,437 - INFO -  * Restarting with stat
+2025-06-20 01:25:48,142 - INFO - Gemini API client initialized successfully.
+2025-06-20 01:25:48,144 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:25:48,145 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:25:48,157 - WARNING -  * Debugger is active!
+2025-06-20 01:25:48,159 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:25:49,547 - INFO - 127.0.0.1 - - [20/Jun/2025 01:25:49] "GET / HTTP/1.1" 200 -
+2025-06-20 01:25:49,558 - INFO - 127.0.0.1 - - [20/Jun/2025 01:25:49] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:26:00,706 - INFO - Querying IOC: 103.28.34.179 (IP)
+2025-06-20 01:26:02,145 - ERROR - CrowdSec query failed for 103.28.34.179: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=103.28.34.179
+2025-06-20 01:26:04,355 - INFO - Attempting Gemini analysis for 103.28.34.179...
+2025-06-20 01:26:04,966 - ERROR - Error calling Gemini API for 103.28.34.179: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-06-20 01:26:04,966 - WARNING - Gemini analysis failed or returned error for 103.28.34.179: Failed to get response from Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.. Falling back to rule-based analysis.
+2025-06-20 01:26:04,978 - INFO - 127.0.0.1 - - [20/Jun/2025 01:26:04] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:26:04,992 - INFO - 127.0.0.1 - - [20/Jun/2025 01:26:04] "GET / HTTP/1.1" 200 -
+2025-06-20 01:26:05,001 - INFO - 127.0.0.1 - - [20/Jun/2025 01:26:05] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:30:35,037 - ERROR - Failed to initialize Gemini API client: 'GenerativeModel' object has no attribute 'name'
+2025-06-20 01:30:35,039 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:30:35,041 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:30:35,060 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:30:35,060 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:30:35,061 - INFO -  * Restarting with stat
+2025-06-20 01:30:36,379 - ERROR - Failed to initialize Gemini API client: 'GenerativeModel' object has no attribute 'name'
+2025-06-20 01:30:36,381 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:30:36,382 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:30:36,395 - WARNING -  * Debugger is active!
+2025-06-20 01:30:36,397 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:30:38,844 - INFO - 127.0.0.1 - - [20/Jun/2025 01:30:38] "GET / HTTP/1.1" 200 -
+2025-06-20 01:30:38,862 - INFO - 127.0.0.1 - - [20/Jun/2025 01:30:38] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:30:53,043 - INFO - Querying IOC: 103.28.34.179 (IP)
+2025-06-20 01:30:54,565 - ERROR - CrowdSec query failed for 103.28.34.179: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=103.28.34.179
+2025-06-20 01:30:56,814 - INFO - Performing rule-based analysis for 103.28.34.179.
+2025-06-20 01:30:56,819 - INFO - 127.0.0.1 - - [20/Jun/2025 01:30:56] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:30:56,831 - INFO - 127.0.0.1 - - [20/Jun/2025 01:30:56] "GET / HTTP/1.1" 200 -
+2025-06-20 01:30:56,840 - INFO - 127.0.0.1 - - [20/Jun/2025 01:30:56] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:32:21,667 - INFO - Querying IOC: 117.193.239.184 (IP)
+2025-06-20 01:32:23,031 - ERROR - CrowdSec query failed for 117.193.239.184: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=117.193.239.184
+2025-06-20 01:32:24,868 - INFO - Performing rule-based analysis for 117.193.239.184.
+2025-06-20 01:32:24,874 - INFO - 127.0.0.1 - - [20/Jun/2025 01:32:24] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:32:24,885 - INFO - 127.0.0.1 - - [20/Jun/2025 01:32:24] "GET / HTTP/1.1" 200 -
+2025-06-20 01:32:24,902 - INFO - 127.0.0.1 - - [20/Jun/2025 01:32:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:34:46,331 - INFO - Querying IOC: karasserybank.com (Domain)
+2025-06-20 01:34:48,842 - INFO - Performing rule-based analysis for karasserybank.com.
+2025-06-20 01:34:48,850 - INFO - 127.0.0.1 - - [20/Jun/2025 01:34:48] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:34:48,862 - INFO - 127.0.0.1 - - [20/Jun/2025 01:34:48] "GET / HTTP/1.1" 200 -
+2025-06-20 01:34:48,873 - INFO - 127.0.0.1 - - [20/Jun/2025 01:34:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:36:36,954 - INFO - Querying IOC: 185.121.233.124 (IP)
+2025-06-20 01:36:38,303 - ERROR - CrowdSec query failed for 185.121.233.124: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=185.121.233.124
+2025-06-20 01:36:40,357 - INFO - Performing rule-based analysis for 185.121.233.124.
+2025-06-20 01:36:40,367 - INFO - 127.0.0.1 - - [20/Jun/2025 01:36:40] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:36:40,380 - INFO - 127.0.0.1 - - [20/Jun/2025 01:36:40] "GET / HTTP/1.1" 200 -
+2025-06-20 01:36:40,391 - INFO - 127.0.0.1 - - [20/Jun/2025 01:36:40] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:42:14,462 - ERROR - Failed to initialize Gemini API client: 'GenerativeModel' object has no attribute 'name'
+2025-06-20 01:42:14,464 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:42:14,465 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:42:14,485 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 01:42:14,485 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 01:42:14,486 - INFO -  * Restarting with stat
+2025-06-20 01:42:17,050 - ERROR - Failed to initialize Gemini API client: 'GenerativeModel' object has no attribute 'name'
+2025-06-20 01:42:17,052 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:42:17,053 - INFO - 'gemini_analysis_result' column already exists.
+2025-06-20 01:42:17,066 - WARNING -  * Debugger is active!
+2025-06-20 01:42:17,068 - INFO -  * Debugger PIN: 137-482-083
+2025-06-20 01:42:18,612 - INFO - 127.0.0.1 - - [20/Jun/2025 01:42:18] "GET / HTTP/1.1" 200 -
+2025-06-20 01:42:18,624 - INFO - 127.0.0.1 - - [20/Jun/2025 01:42:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:42:33,254 - INFO - Querying IOC: 185.121.233.124 (IP)
+2025-06-20 01:42:34,826 - ERROR - CrowdSec query failed for 185.121.233.124: 403 Client Error: Forbidden for url: https://api.crowdsec.net/v2/decisions?ip=185.121.233.124
+2025-06-20 01:42:36,754 - INFO - Performing rule-based analysis for 185.121.233.124.
+2025-06-20 01:42:36,764 - INFO - 127.0.0.1 - - [20/Jun/2025 01:42:36] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:42:36,777 - INFO - 127.0.0.1 - - [20/Jun/2025 01:42:36] "GET / HTTP/1.1" 200 -
+2025-06-20 01:42:36,785 - INFO - 127.0.0.1 - - [20/Jun/2025 01:42:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-06-20 01:45:13,496 - INFO - Querying IOC: a50bcbf0ef744f6b7780685cfd2f41a13be4c921d4b401384efd85c6109d7c00 (Hash)
+2025-06-20 01:45:14,365 - INFO - Performing rule-based analysis for a50bcbf0ef744f6b7780685cfd2f41a13be4c921d4b401384efd85c6109d7c00.
+2025-06-20 01:45:14,372 - INFO - 127.0.0.1 - - [20/Jun/2025 01:45:14] "POST /query HTTP/1.1" 200 -
+2025-06-20 01:45:14,383 - INFO - 127.0.0.1 - - [20/Jun/2025 01:45:14] "GET / HTTP/1.1" 200 -
+2025-06-20 01:45:14,400 - INFO - 127.0.0.1 - - [20/Jun/2025 01:45:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intelligence Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <a class="navbar-brand fw-bold text-white text-2xl" href="/">Threat Intelligence Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Query Indicator of Compromise</h2>
+            <form id="ioc-query-form" class="space-y-4">
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <label for="indicator" class="form-label text-gray-700 font-medium">Indicator</label>
+                        <input type="text" class="form-control" id="indicator" name="indicator" placeholder="e.g., 8.8.8.8, example.com, abc123def456..." required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ioc_type" class="form-label text-gray-700 font-medium">Type</label>
+                        <select class="form-select" id="ioc_type" name="ioc_type" required>
+                            <option value="">Select Type</option>
+                            <option value="IP">IP Address</option>
+                            <option value="Domain">Domain</option>
+                            <option value="Hash">File Hash (MD5, SHA1, SHA256)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-full md:w-auto px-6 py-3 text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">Query IOC</button>
+            </form>
+        </div>
+
+        <div id="gemini-analysis-section" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Latest Gemini Threat Analysis</h2>
+            {% if queries and queries[0] and queries[0].gemini_analysis_result %}
+                {% set gemini_result = queries[0].gemini_analysis_result %}
+                {% if not gemini_result.error %}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
+                            <p class="text-lg font-semibold text-gray-700 mb-2">Indicator: <span class="font-normal text-gray-800">{{ gemini_result.indicator }}</span></p>
+                            <p class="text-lg font-semibold text-gray-700 mb-2">Type: <span class="font-normal text-gray-800">{{ gemini_result.type }}</span></p>
+                            <p class="text-lg font-semibold text-gray-700 mb-2">Total Score: <span class="font-normal text-gray-800">{{ gemini_result.total_score }}</span></p>
+                            <p class="text-lg font-semibold text-gray-700 mb-2">Severity: 
+                                {% if gemini_result.severity == 'Critical' %}
+                                    <span class="text-red-600 font-bold">{{ gemini_result.severity }}</span>
+                                {% elif gemini_result.severity == 'High' %}
+                                    <span class="text-orange-500 font-bold">{{ gemini_result.severity }}</span>
+                                {% elif gemini_result.severity == 'Medium' %}
+                                    <span class="text-yellow-500 font-bold">{{ gemini_result.severity }}</span>
+                                {% else %}
+                                    <span class="text-green-500 font-bold">{{ gemini_result.severity }}</span>
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-md border border-gray-200">
+                            <p class="text-lg font-semibold text-gray-700 mb-2">Summary:</p>
+                            <p class="text-gray-800 text-base leading-relaxed">{{ gemini_result.summary }}</p>
+                            {% if gemini_result.iocs_found %}
+                            <p class="text-lg font-semibold text-gray-700 mt-3 mb-1">Related IOCs:</p>
+                            <ul class="list-disc list-inside text-gray-800 text-sm">
+                                {% for ioc in gemini_result.iocs_found %}
+                                    <li>{{ ioc }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            {% if gemini_result.recommendations %}
+                            <p class="text-lg font-semibold text-gray-700 mt-3 mb-1">Recommendations:</p>
+                            <ul class="list-disc list-inside text-gray-800 text-sm">
+                                {% for rec in gemini_result.recommendations %}
+                                    <li>{{ rec }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% elif gemini_result.error %}
+                    <p class="text-yellow-600 text-lg">Gemini analysis encountered an error for the latest query: {{ gemini_result.error }}</p>
+                {% else %}
+                    <p class="text-gray-600 text-lg">Gemini analysis results are not available for the latest query. The model might not have returned a valid response.</p>
+                {% endif %}
+            {% else %}
+                <p class="text-gray-600 text-lg">No Gemini analysis available yet. Query an IOC to see the results here.</p>
+            {% endif %}
+        </div>
+
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Search Query History</h2>
+            <input type="text" class="form-control mb-4" id="search-input" placeholder="Search by Indicator, Type, or Gemini Summary...">
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Query History</h2>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Indicator</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URLhaus</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">OpenPhish</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CrowdSec</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">AlienVault</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">VirusTotal</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">AbuseIPDB</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="query-history-body" class="bg-white divide-y divide-gray-200">
+                    {% for q in queries %}
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ q.id }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ q.indicator }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ q.type }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.urlhaus_result and q.urlhaus_result.error %}
+                                <span class="text-red-500">{{ q.urlhaus_result.error }}</span>
+                            {% elif q.urlhaus_result and q.urlhaus_result.matches %}
+                                <span class="text-red-600 font-medium">{{ q.urlhaus_result.matches | length }} match(es)</span>
+                            {% else %}
+                                No data
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.openphish_result and q.openphish_result.error %}
+                                <span class="text-red-500">{{ q.openphish_result.error }}</span>
+                            {% elif q.openphish_result and q.openphish_result.matches %}
+                                <span class="text-red-600 font-medium">{{ q.openphish_result.matches | length }} match(es)</span>
+                            {% else %}
+                                No data
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.crowdsec_result and q.crowdsec_result.error %}
+                                <span class="text-red-500">{{ q.crowdsec_result.error }}</span>
+                            {% else %}
+                                Score: {{ q.crowdsec_result.score if q.crowdsec_result else 0 }}
+                                {% if q.crowdsec_result and q.crowdsec_result.behaviors %}
+                                    <ul class="list-unstyled mt-2 text-xs">
+                                        {% for b in q.crowdsec_result.behaviors %}
+                                            <li>{{ b.label }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    None
+                                {% endif %}
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.alienvault_result and q.alienvault_result.error %}
+                                <span class="text-red-500">{{ q.alienvault_result.error }}</span>
+                            {% else %}
+                                Pulse Count: {{ q.alienvault_result.pulse_count if q.alienvault_result else 0 }}<br>
+                                Reputation: {{ q.alienvault_result.reputation if q.alienvault_result else 0 }}
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.virustotal_result and q.virustotal_result.error %}
+                                <span class="text-red-500">{{ q.virustotal_result.error }}</span>
+                            {% else %}
+                                Malicious: {{ q.virustotal_result.malicious if q.virustotal_result else 0 }}<br>
+                                Suspicious: {{ q.virustotal_result.suspicious if q.virustotal_result else 0 }}<br>
+                                Harmless: {{ q.virustotal_result.harmless if q.virustotal_result else 0 }}
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {% if q.abuseipdb_result and q.abuseipdb_result.error %}
+                                <span class="text-red-500">{{ q.abuseipdb_result.error }}</span>
+                            {% else %}
+                                Confidence Score: {{ q.abuseipdb_result.confidence_score if q.abuseipdb_result else 0 }}<br>
+                                Reports: {{ q.abuseipdb_result.reports if q.abuseipdb_result else 0 }}
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ q.timestamp }}</td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="10" class="px-6 py-4 text-center text-gray-500">No queries in history yet.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigF/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('ioc-query-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const indicator = document.getElementById('indicator').value;
+            const ioc_type = document.getElementById('ioc_type').value;
+
+            try {
+                const response = await fetch('/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `indicator=${encodeURIComponent(indicator)}&ioc_type=${encodeURIComponent(ioc_type)}`
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    alert(`Error: ${errorData.error || 'Something went wrong!'}`);
+                    return;
+                }
+
+                // Redirect to refresh the page after successful submission
+                window.location.reload(); 
+
+            } catch (error) {
+                console.error('Error submitting query:', error);
+                alert('An error occurred while querying the IOC.');
+            }
+        });
+
+        // Search functionality
+        // Ensure queriesData is always an array, even if empty
+        const queriesData = {{ queries | tojson | safe }}; // Pass queries data from Flask to JS. Use | safe to avoid escaping issues with JSON.
+
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchText = this.value.toLowerCase();
+            const tableBody = document.getElementById('query-history-body');
+            tableBody.innerHTML = ''; // Clear current table body
+
+            const filteredQueries = queriesData.filter(q => {
+                // Safely access gemini_analysis_result properties
+                const geminiResult = q.gemini_analysis_result || {}; // Default to empty object if null/undefined
+                const geminiSummary = geminiResult.summary ? String(geminiResult.summary).toLowerCase() : '';
+                const geminiIocs = Array.isArray(geminiResult.iocs_found) ? geminiResult.iocs_found.map(item => String(item).toLowerCase()) : [];
+                const geminiRecommendations = Array.isArray(geminiResult.recommendations) ? geminiResult.recommendations.map(item => String(item).toLowerCase()) : [];
+
+                return (q.indicator && String(q.indicator).toLowerCase().includes(searchText)) || // Check for null before calling .toLowerCase()
+                       (q.type && String(q.type).toLowerCase().includes(searchText)) ||
+                       geminiSummary.includes(searchText) ||
+                       geminiIocs.some(ioc => ioc.includes(searchText)) ||
+                       geminiRecommendations.some(rec => rec.includes(searchText));
+            });
+
+            if (filteredQueries.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="10" class="px-6 py-4 text-center text-gray-500">No matching queries found.</td></tr>`;
+            } else {
+                filteredQueries.forEach(q => {
+                    const row = document.createElement('tr');
+                    row.className = 'hover:bg-gray-50';
+
+                    // Safely get results, defaulting to empty objects if null
+                    const urlhaus_result = q.urlhaus_result || {};
+                    const openphish_result = q.openphish_result || {};
+                    const crowdsec_result = q.crowdsec_result || {};
+                    const alienvault_result = q.alienvault_result || {};
+                    const virustotal_result = q.virustotal_result || {};
+                    const abuseipdb_result = q.abuseipdb_result || {};
+
+                    row.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${q.id}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${q.indicator}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${q.type}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${urlhaus_result.error ? `<span class="text-red-500">${urlhaus_result.error}</span>` : urlhaus_result.matches && urlhaus_result.matches.length > 0 ? `<span class="text-red-600 font-medium">${urlhaus_result.matches.length} match(es)</span>` : 'No data'}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${openphish_result.error ? `<span class="text-red-500">${openphish_result.error}</span>` : openphish_result.matches && openphish_result.matches.length > 0 ? `<span class="text-red-600 font-medium">${openphish_result.matches.length} match(es)</span>` : 'No data'}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${crowdsec_result.error ? `<span class="text-red-500">${crowdsec_result.error}</span>` : `Score: ${crowdsec_result.score || 0} ${crowdsec_result.behaviors && crowdsec_result.behaviors.length > 0 ? `<ul class="list-unstyled mt-2 text-xs">${crowdsec_result.behaviors.map(b => `<li>${b.label}</li>`).join('')}</ul>` : 'None'}`}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${alienvault_result.error ? `<span class="text-red-500">${alienvault_result.error}</span>` : `Pulse Count: ${alienvault_result.pulse_count || 0}<br>Reputation: ${alienvault_result.reputation || 0}`}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${virustotal_result.error ? `<span class="text-red-500">${virustotal_result.error}</span>` : `Malicious: ${virustotal_result.malicious || 0}<br>Suspicious: ${virustotal_result.suspicious || 0}<br>Harmless: ${virustotal_result.harmless || 0}`}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            ${abuseipdb_result.error ? `<span class="text-red-500">${abuseipdb_result.error}</span>` : `Confidence Score: ${abuseipdb_result.confidence_score || 0}<br>Reports: ${abuseipdb_result.reports || 0}`}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${q.timestamp}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

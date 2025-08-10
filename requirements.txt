@@ -1,0 +1,5 @@
+Flask==2.3.3
+requests==2.32.3
+python-dotenv==1.0.1
+textual==0.81.0
+google-generativeai==0.6.0 # Add this line
